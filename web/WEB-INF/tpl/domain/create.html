@@ -2,22 +2,22 @@
 
 <div class="panel panel-default">
 	<div class="panel-heading">
-		<h3 class="panel-title">create domain</h3>
+		<h3 class="panel-title">创建域名</h3>
 	</div>
 	<div class="panel-body">
 		<div class="form-group">
-			<label for="domain">External Domain:</label> <input type="text" id="domain" class="form-control" />
+			<label for="domain">外部域名:</label> <input type="text" id="domain" class="form-control" />
 		</div>
 		<div class="form-group">
-			<label for="team">Belong to Team(<a href="${uic}/team/create"
-				target="_blank">Create Team</a>):
+			<label for="team">所属团队(<a href="${uic}/team/create"
+				target="_blank">创建团队</a>):
 			</label> <select id="team" class="form-control"> <#list ts as t>
 				<option value="${t.id}-${t.name}">${t.name}</option> </#list>
 			</select>
 		</div>
 		<button type="button" class="btn btn-primary" id="sub"
-			onclick="create_domain();">Submit</button>
-		<a href="/domain" class="btn btn-warning">Cancel</a>
+			onclick="create_domain();">提交</button>
+		<a href="/domain" class="btn btn-warning">取消</a>
 	</div>
 </div>
 
