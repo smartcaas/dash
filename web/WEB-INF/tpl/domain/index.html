@@ -2,17 +2,17 @@
 
 <div class="panel panel-default">
 	<div class="panel-heading">
-		<h3 class="panel-title">Domains</h3>
+		<h3 class="panel-title">域名</h3>
 	</div>
 	<div class="panel-body">
 	
 	<table class="table table-striped">
                     <thead>
                     <tr>
-                        <th>Domain</th>
-                        <th>Team</th>
-                        <th>AppName</th>
-                        <th>Operation</th>
+                        <th>域名</th>
+                        <th>团队</th>
+                        <th>应用</th>
+                        <th>操作</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -27,7 +27,7 @@
                             </td>
                             <td>
                             	<#if o.app_id == 0>
-                            	<a href="/domain/bind/${o.id}">bind app</a>
+                            	<a href="/domain/bind/${o.id}">绑定的应用</a>
                             	<#else>
                             	${o.app_name}
                             	<a href="/domain/bind/${o.id}"><span class="glyphicon glyphicon-edit"></span></a>
@@ -45,7 +45,7 @@
 </div>
 
 <div>
-	<a href="/domain/create" class="btn btn-primary">Create Domain</a>
+	<a href="/domain/create" class="btn btn-primary">创建域名</a>
 </div>
 
 </@layout>
