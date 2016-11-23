@@ -2,18 +2,18 @@
 
 <div class="panel panel-default">
 	<div class="panel-heading">
-		<h3 class="panel-title">Applications</h3>
+		<h3 class="panel-title">应用列表</h3>
 	</div>
 	<div class="panel-body">
 	
 	<table class="table table-striped">
                     <thead>
                     <tr>
-                        <th>Name</th>
-                        <th>Memory(in MB)</th>
-                        <th>Instance</th>
-                        <th>Team</th>
-                        <th>Operation</th>
+                        <th>名称</th>
+                        <th>内存(MB)</th>
+                        <th>实例</th>
+                        <th>团队<th>
+                        <th>操作</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -26,15 +26,15 @@
                             	${a.team_name}
                             </td>
                             <td>
-                                <a href="/app/deploy/${a.id}">deploy</a>
+                                <a href="/app/deploy/${a.id}">部署</a>
                                 <span class="cut-line">¦</span>
-                                <a href="/app/scale/${a.id}">scale</a>
+                                <a href="/app/scale/${a.id}">扩容</a>
                                 <span class="cut-line">¦</span>
-                                <a href="/app/instance/${a.id}">instances</a>
+                                <a href="/app/instance/${a.id}">实例</a>
                                 <span class="cut-line">¦</span>
-                                <a href="/app/env/${a.id}">env</a>
+                                <a href="/app/env/${a.id}">环境</a>
                                 <span class="cut-line">¦</span>
-                                <a href="/app/history/${a.id}">history</a>
+                                <a href="/app/history/${a.id}">历史</a>
                                 <span class="cut-line">¦</span>
                                 <a href="/app/edit/${a.id}"><span class="glyphicon glyphicon-edit"></span></a>
                                 <a href="javascript:del_app('${a.id}');"><span class="glyphicon glyphicon-remove"></span></a>
@@ -48,7 +48,7 @@
 </div>
 
 <div>
-	<a class="btn btn-primary" href="/app/create">create app</a>
+	<a class="btn btn-primary" href="/app/create">创建应用</a>
 </div>
 
 </@layout>
