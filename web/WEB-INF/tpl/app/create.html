@@ -2,27 +2,27 @@
 
 <div class="panel panel-default">
 	<div class="panel-heading">
-		<h3 class="panel-title">create app</h3>
+		<h3 class="panel-title">创建应用</h3>
 	</div>
 	<div class="panel-body">
 		<div class="form-group">
-			<label for="name">Name(english identifier, subdomain of
+			<label for="name">名称(英文标识，作为子域名：
 				${paasDomain!}):</label> <input type="text" id="name" class="form-control" />
 		</div>
 		<div class="form-group">
-			<label for="team">Belong to Team(<a href="${uic}/team/create"
-				target="_blank">Create Team</a>):
+			<label for="team">所属团队(<a href="${uic}/team/create"
+				target="_blank">创建团队</a>):
 			</label> <select id="team" class="form-control"> <#list ts as t>
 				<option value="${t.id}-${t.name}">${t.name}</option> </#list>
 			</select>
 		</div>
 		<div class="form-group">
-			<label for="health">Health interface(e.g. /health do not want health check? leave it blank):</label>
+			<label for="health">健康度接口(e.g. /health 可以不设置? 保持空白):</label>
 			<input type="text" id="health" class="form-control" />
 		</div>
 		<button type="button" class="btn btn-primary" id="sub"
-			onclick="create_app();">Submit</button>
-		<a href="/" class="btn btn-warning">Cancel</a>
+			onclick="create_app();">提交</button>
+		<a href="/" class="btn btn-warning">取消</a>
 	</div>
 </div>
 
