@@ -2,12 +2,12 @@
 
 <div class="panel panel-default">
 	<div class="panel-heading">
-		<h3 class="panel-title">edit domain: ${d.domain}</h3>
+		<h3 class="panel-title">编辑域名: ${d.domain}</h3>
 	</div>
 	<div class="panel-body">
 		<div class="form-group">
-			<label for="team">Belong to Team(<a href="${uic}/team/create"
-				target="_blank">Create Team</a>):
+			<label for="team">所属团队(<a href="${uic}/team/create"
+				target="_blank">创建团队</a>):
 			</label>
 			<select id="team" class="form-control">
 			<#list ts as t>
@@ -21,8 +21,8 @@
 		</div>
 		<input type="hidden" id="domain_id" value="${d.id}">
 		<button type="button" class="btn btn-primary" id="sub"
-			onclick="edit_domain();">Submit</button>
-		<a href="/domain" class="btn btn-warning">Cancel</a>
+			onclick="edit_domain();">提交</button>
+		<a href="/domain" class="btn btn-warning">取消</a>
 	</div>
 </div>
 
